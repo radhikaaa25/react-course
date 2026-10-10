@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import './LoginForm.css';
 
+// Define a LoginForm component that manages password visibility
 export function LoginForm() {
+  // Initialize a state variable to track if the password should be shown
   const [showPassword, setShowPassword] = useState(false);
 
+  // Function to toggle the 'showPassword' state
   function toggleShowPassword() {
     setShowPassword(!showPassword);
   }

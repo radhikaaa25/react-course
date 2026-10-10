@@ -21,6 +21,7 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
+      // Define an App component that renders a stylized button
       function App() {
         return (
           <button className="on-button">
@@ -29,6 +30,7 @@
         );
       }
 
+      // Get the container element and render the App component inside it
       const container = document.querySelector('.js-container');
       ReactDOM.createRoot(container).render(<App />);
     </script>

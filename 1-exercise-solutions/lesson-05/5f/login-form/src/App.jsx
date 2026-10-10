@@ -1,6 +1,7 @@
 import { LoginForm } from './components/LoginForm';
 import './App.css';
 
+// Define an App component that renders a greeting and the LoginForm
 function App() {
   return (
     <>

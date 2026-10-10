@@ -30,9 +30,12 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
+      // Define an App component that toggles a button state and style
       function App() {
+        // Initialize a state variable to track if the button is ON
         const [isButtonOn, setIsButtonOn] = React.useState(true);
 
+        // Function to toggle the button's ON/OFF state
         function switchButtonOn() {
           if (isButtonOn) {
             setIsButtonOn(false);
@@ -55,6 +58,7 @@
         );
       }
 
+      // Get the container element and render the App component inside it
       const container = document.querySelector('.js-container');
       ReactDOM.createRoot(container).render(<App />);
     </script>

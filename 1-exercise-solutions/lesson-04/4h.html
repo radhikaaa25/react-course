@@ -11,18 +11,23 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
+      // Define an App component with a counter and an auto-clicker feature
       function App() {
+        // Initialize state for the count and a reference for the button element
         const [count, setCount] = React.useState(0);
         const buttonRef = React.useRef();
 
+        // Function to increment the 'count' state
         function increaseCount() {
           setCount(count + 1);
         }
 
+        // Function to reset the 'count' state
         function resetCount() {
           setCount(0);
         }
 
+        // Function to simulate a click on the button every second
         function autoClick() {
           setInterval(() => {
             const buttonElem = buttonRef.current;
@@ -50,6 +55,7 @@
         );
       }
 
+      // Get the container element and render the App component inside it
       const container = document.querySelector('.js-container');
       ReactDOM.createRoot(container).render(<App />);
     </script>

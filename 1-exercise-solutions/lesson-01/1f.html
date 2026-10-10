@@ -11,9 +11,11 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
+      // Calculate the total product cost and shipping cost
       const productCost = 10 + 8 * 2;
       const shippingCost = 5;
 
+      // Create a div element containing the costs and a button
       const div = (
         <div>
           <p>Product cost: ${productCost}</p>
@@ -23,6 +25,7 @@
         </div>
       );
 
+      // Get the container element and render the div inside it
       const container = document.querySelector('.js-container');
       ReactDOM.createRoot(container).render(div);
     </script>

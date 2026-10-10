@@ -13,8 +13,10 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
+      // Log the current date in 'MMMM D' format to the console
       console.log(dayjs().format('MMMM D'));
 
+      // Get the container element and render an empty root
       const container = document.querySelector('.js-container');
       ReactDOM.createRoot(container).render();
     </script>

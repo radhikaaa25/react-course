@@ -11,6 +11,7 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
+      // Define a ProductDetails component that uses a ternary operator for discount logic
       function ProductDetails({ name, price, discountPrice }) {
         return (
           <>
@@ -28,6 +29,7 @@
         );
       }
 
+      // Define an App component that displays multiple ProductDetails components
       function App() {
         return (
           <>
@@ -48,6 +50,7 @@
         );
       }
 
+      // Get the container element and render the App component inside it
       const container = document.querySelector('.js-container');
       ReactDOM.createRoot(container).render(<App />);
     </script>

@@ -15,11 +15,14 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
+      // Define an App component that displays the current time using a side effect
       function App() {
+        // Initialize state variable 'time' with the current time
         const [time, setTime] = React.useState(
           dayjs().format('HH:mm:ss')
         );
 
+        // Set up an interval to update the time every second when the component mounts
         React.useEffect(() => {
           setInterval(() => {
             setTime(dayjs().format('HH:mm:ss'));
@@ -34,6 +37,7 @@
         );
       }
 
+      // Get the container element and render the App component inside it
       const container = document.querySelector('.js-container');
       ReactDOM.createRoot(container).render(<App />);
     </script>

@@ -11,9 +11,12 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
+      // Define an App component that renders a stateful counter button
       function App() {
+        // Initialize a state variable 'count' with 0
         const [count, setCount] = React.useState(0);
 
+        // Function to increment the 'count' state
         function increaseCount() {
           setCount(count + 1);
         }
@@ -25,6 +28,7 @@
         );
       }
 
+      // Get the container element and render the App component inside it
       const container = document.querySelector('.js-container');
       ReactDOM.createRoot(container).render(<App />);
     </script>

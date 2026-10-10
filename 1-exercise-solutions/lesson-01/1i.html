@@ -13,8 +13,10 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
+      // Create a paragraph element displaying the current time
       const paragraph = <p>Current time: {dayjs().format('HH:mm:ss')}</p>;
 
+      // Get the container element and render the paragraph inside it
       const container = document.querySelector('.js-container');
       ReactDOM.createRoot(container).render(paragraph);
     </script>

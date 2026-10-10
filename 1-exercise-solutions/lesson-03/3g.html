@@ -11,9 +11,12 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
+      // Define an App component with a controlled text input
       function App() {
+        // Initialize a state variable 'inputText' with an empty string
         const [inputText, setInputText] = React.useState('');
 
+        // Function to update the 'inputText' state with the input's current value
         function saveInputText(event) {
           setInputText(event.target.value);
         }
@@ -29,6 +32,7 @@
         )
       }
 
+      // Get the container element and render the App component inside it
       const container = document.querySelector('.js-container');
       ReactDOM.createRoot(container).render(<App />);
     </script>

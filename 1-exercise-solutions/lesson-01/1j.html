@@ -13,12 +13,15 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
+      // Create a paragraph element displaying the current time
       const paragraph = <p>Current time: {dayjs().format('HH:mm:ss')}</p>;
 
+      // Get the container element and initialize a React root
       const container = document.querySelector('.js-container');
       const root = ReactDOM.createRoot(container);
       root.render(paragraph);
 
+      // Update the current time and re-render every second
       setInterval(() => {
         const paragraph = <p>Current time: {dayjs().format('HH:mm:ss')}</p>;
         root.render(paragraph);

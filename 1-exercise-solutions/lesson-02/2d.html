@@ -11,6 +11,7 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
+      // Define a LoginForm component containing inputs and buttons
       function LoginForm() {
         return (
           <>
@@ -26,6 +27,7 @@
         );
       }
 
+      // Define an App component that includes a greeting and the LoginForm
       function App() {
         return (
           <>
@@ -35,6 +37,7 @@
         );
       }
 
+      // Get the container element and render the App component inside it
       const container = document.querySelector('.js-container');
       ReactDOM.createRoot(container).render(<App />);
     </script>

@@ -11,10 +11,13 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
+      // Calculate the total product cost
       const productCost = 10 + 8 * 2;
 
+      // Create a paragraph element displaying the product cost
       const paragraph = <p>Product cost: ${productCost}</p>;
 
+      // Get the container element and render the paragraph inside it
       const container = document.querySelector('.js-container');
       ReactDOM.createRoot(container).render(paragraph);
     </script>

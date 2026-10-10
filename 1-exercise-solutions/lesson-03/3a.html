@@ -11,7 +11,9 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
+      // Define an App component that renders a button
       function App() {
+        // Function to log a message when the button is clicked
         function increaseCount() {
           console.log('Clicked');
         }
@@ -23,6 +25,7 @@
         );
       }
 
+      // Get the container element and render the App component inside it
       const container = document.querySelector('.js-container');
       ReactDOM.createRoot(container).render(<App />);
     </script>

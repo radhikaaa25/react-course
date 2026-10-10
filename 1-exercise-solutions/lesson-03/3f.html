@@ -11,7 +11,9 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
+      // Define a Counter component that takes state props
       function Counter({ count, setCount }) {
+        // Function to increment the 'count' state
         function increaseCount() {
           setCount(count + 1);
         }
@@ -23,9 +25,12 @@
         );
       }
 
+      // Define an App component that manages shared state and a reset button
       function App() {
+        // Initialize a state variable 'count' with 0
         const [count, setCount] = React.useState(0);
 
+        // Function to reset the 'count' state to 0
         function resetCount() {
           setCount(0);
         }
@@ -47,6 +52,7 @@
         )
       }
 
+      // Get the container element and render the App component inside it
       const container = document.querySelector('.js-container');
       ReactDOM.createRoot(container).render(<App />);
     </script>
